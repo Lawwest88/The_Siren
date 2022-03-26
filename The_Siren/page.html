@@ -1,0 +1,113 @@
+<html>
+    <head><h1 class="titsect">SIREN</h1>
+       
+        
+            
+        <style>
+            .titsect {
+                background-color: rgb(217, 241, 241);
+                block-size: auto;
+                padding: 1em;
+                padding-block: 2em;
+                padding-top: 2em;
+                border-radius: 1cm;
+                text-align: center;
+                
+                
+            }
+            .repsect1 {
+                background-color: rgb(140, 233, 233);
+                block-size: auto;
+                padding: 2em;
+                padding-block: 2em;
+                padding-top: 2em;
+                border-radius: 1cm;
+                text-align: center;
+            }
+            .incsect1{
+                background-color: rgb(55, 230, 230);
+                block-size: auto;
+                padding: 2em;
+                padding-block: 2em;
+                padding-top: 2em;
+                border-radius: 1cm;
+                text-align: center;
+
+            }
+            .locsect1{
+                background-color: rgb(9, 138, 138);
+                block-size: auto;
+                padding: 2em;
+                padding-block: 2em;
+                padding-top: 2em;
+                border-radius: 1cm;
+                text-align: center;
+
+            }
+        </style>
+
+
+
+
+
+</head>
+   
+
+    <body>
+        <div class="repsect1">
+            <h1 id="repsect">REPORTER</h1>
+            <ul>First Name <input type="text" name="q"></ul>
+            <ul>Last Name <input type="text" name="q"></ul>
+            <ul>Email <input type="text" name="q"></ul>
+            <ul>Age <input type="number" name="q"></ul>
+        </div>
+        <div class="incsect1">
+            <h1 id="incsect">INCIDENT </h1>
+            <p><img src="https://media.istockphoto.com/vectors/fire-flame-icon-isolated-bonfire-sign-emoticon-flame-symbol-isolated-vector-id1137962021?k=20&m=1137962021&s=612x612&w=0&h=Ub026rl_amXtLNPbMMJRQHDcJ93G_v5d23C55OUtqXk=" height="75em", width="75em"> Fire Dept <input type="checkbox" name="Fire Dept">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://media.istockphoto.com/vectors/police-badge-icon-shield-with-a-star-vector-illustration-on-white-vector-id1133530648?k=20&m=1133530648&s=612x612&w=0&h=NagO2RQOg13pZwii6FljKa63hgGoNB_KrhVcipCEbM4=" height="75em", width="75em"> Police Dept <input type="checkbox" name="Police Dept">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://media.istockphoto.com/vectors/heart-isometric-health-care-concept-red-shape-and-heartbeat-vector-id1183325543?k=20&m=1183325543&s=612x612&w=0&h=8AFG-3S4WTuK6RaCvGKtOy2ndQFDhwTrA36XbDoVOrQ=" height="75em", width="75em"> Medical Dept <input type="checkbox" name="Medical Dept"></p>
+        </div>
+        <div class="locsect1">
+            <h1 id="locsect">LOCATION</h1>
+            <p><a href="https://www.google.com/maps/search/Lake+Manitoba+first+nation,+Manitoba/@50.9274886,-98.6213239,14z/data=!3m1!4b1">Click Icon <img src= "https://www.google.com/images/branding/product/2x/maps_96in128dp.png" height="75em", width="75em"></a></p>
+            <p>I'm creating a link to
+                <a href="https://www.mozilla.org/en-US/"
+                   title="The best place to find more information about Mozilla's
+                          mission and how to contribute">Pinned Map</a>.
+                </p>
+                
+       </div>
+
+       <div id="contact">
+        <!-this is my contact form-->
+        <h3>Contact Form</h3>
+         <form action="">
+        <label for="fname">First Name</label>   
+        <input type="text"name "fname">
+        <label for="lname">Last Name</label>
+        <input type="text"name "lname">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" required>
+        <br>
+        <label for="city">City</label>
+        <select name="city" id="">
+        <option>---</option>
+        <option>Winnipeg</option>
+        <option>Saskatoon</option>
+        <option>Lake Manitoba</option>
+        <option>Nelson House</option>
+        <option>Yo' Momma's House</option>
+        </select>
+        <br>
+        <label for="subject">Subject</label>
+        <textarea name="message" id="" style="height:50px ; width:100%" placeholder="Talk to us..."></textarea>
+        <br>
+        <input type="submit" onclick="formSubmission()">
+         </form>
+    </body>
+
+
+
+</html>
+    
