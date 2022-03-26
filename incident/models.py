@@ -5,3 +5,6 @@ class Incident_type(models.Model):
     police = models.CharField(max_length=50)
     medical = models.CharField(max_length=50)
     created = models.DateTimeField(auto_now=True)
+
+    #image 
+    image = models.ImageField(default=None)
