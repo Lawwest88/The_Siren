@@ -1,7 +1,7 @@
 from django.contrib import admin
-from reporter.models import Reporter
+from reporter.models import ReporterListView
 
 class ReporterAdmin(admin.ModelAdmin):
     list_display = ('first_name','last_name','age')
 
-admin.site.register(Reporter, ReporterAdmin)
+admin.site.register(ReporterListView, ReporterAdmin)
