@@ -8,3 +8,6 @@ class Incident_type(models.Model):
 
     #image 
     image = models.ImageField(default=None)
+
+    #text/details
+    details = models.TextField()
