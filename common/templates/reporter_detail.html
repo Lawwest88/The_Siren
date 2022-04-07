@@ -1,0 +1,15 @@
+{% extends 'base_template.html' %}
+
+{% block page_title %} {{ reporter }}{% endblock %}
+
+{% block content %}
+<div class="list-group">
+    {% for reporter in reporting_list %}
+        <a class="reporter-group-item reporter-group-item-action" href="{% url 'reporter_details' reporter.pk %}">
+            <div class="row">
+                <div class="col">{{ reporter.title }}</div>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}

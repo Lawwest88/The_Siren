@@ -1,0 +1,15 @@
+{% extends 'base_template.html' %}
+
+{% block page_title %} {{ incident }}{% endblock %}
+
+{% block content %}
+<div class="list-group">
+    {% for incident in incident_list %}
+        <a class="list-group-item list-group-item-action" href="{% url 'incident_details' incident.pk %}">
+            <div class="row">
+                <div class="col">{{ incident.title }}</div>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}
