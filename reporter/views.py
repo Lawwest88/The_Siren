@@ -1,6 +1,6 @@
 from django.views.generic import ListView, DetailView
-from reporter.models import ReporterListView
-from reporter.models import Reporter
+from reporter.models import ReporterListView, Reporter
+
 
 
 class ReporterListView(ListView):
@@ -15,6 +15,6 @@ class ReporterListView(ListView):
 class ReporterListView(DetailView):
     model = Reporter
     
-def get_context_data(self, **kwargs):
+    def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
